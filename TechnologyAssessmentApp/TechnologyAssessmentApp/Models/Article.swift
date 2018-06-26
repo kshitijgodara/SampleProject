@@ -23,10 +23,10 @@ public class Article: NSObject {
     // MARK: - Private Instance Property
     //
     private let networkKeyMap: [String: String] = ["abstract": "abstract",
-                                                   "dateString": "dateString",
-                                                   "byLine": "byLine",
-                                                   "URLLink": "URLLink",
-                                                   "imageUrl": "imageUrl"]
+                                                   "published_date": "published_date",
+                                                   "byline": "byline",
+                                                   "url": "url",
+                                                   "media": "media"]
     
     override init() {
         super.init()
@@ -50,6 +50,7 @@ public class Article: NSObject {
                     if let format = dict["format"] as? String, format == "Standard Thumbnail",let imageUrl =  dict["url"] as? String
                     {
                         self.imageUrl = imageUrl
+                        break
                         
                     }
                 }
@@ -62,13 +63,20 @@ public class Article: NSObject {
             if let networkObject = jsonObject[value] as? String
             {
                 //self.setValue(networkObject, forKey: key)
-                if key == "abstract" {
+                if key == "abstract"
+                {
                     self.abstract = networkObject
-                } else if key == "byline" {
+                }
+                if key == "byline"
+                {
                     self.byLine = networkObject
-                } else if key == "published_date" {
+                }
+               if key == "published_date"
+               {
                     self.dateString = networkObject
-                } else if key == "url" {
+                }
+                if key == "url"
+                {
                     self.URLLink = networkObject
                 }
             }

@@ -29,7 +29,7 @@ class ArticleTableViewCell: UITableViewCell {
         
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
-        articleIconImageView.layer.cornerRadius = ((60 * UIScreen.main.bounds.width)/375.0)/2.0
+        articleIconImageView.layer.cornerRadius = ((54.67 * UIScreen.main.bounds.width)/375.0)/2.0
         articleIconImageView.layer.masksToBounds = true
     }
 

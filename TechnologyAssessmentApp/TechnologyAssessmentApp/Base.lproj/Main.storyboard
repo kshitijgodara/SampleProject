@@ -95,7 +95,7 @@
                                                 <constraint firstAttribute="width" secondItem="Ff6-un-IzX" secondAttribute="height" multiplier="1:1" id="wvB-I6-tWA"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="esG-Lq-76A">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esG-Lq-76A">
                                             <rect key="frame" x="82.666666666666671" y="18" width="243.66666666666663" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="8Jz-xY-8YC"/>
@@ -107,17 +107,11 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="uPm-zB-LVQ">
                                             <rect key="frame" x="82.666666666666671" y="69" width="243.66666666666663" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="267" id="BPm-hc-I9m"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Rgd-YT-lhj"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="BPm-hc-I9m"/>
-                                                </mask>
-                                            </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tef-Wy-wNb">
                                             <rect key="frame" x="293.33333333333331" y="94" width="33" height="15.666666666666671"/>
@@ -132,6 +126,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="esG-Lq-76A" firstAttribute="width" relation="lessThanOrEqual" secondItem="bao-Vr-ojs" secondAttribute="width" multiplier="267:375" id="7Tk-L0-hWm"/>
+                                        <constraint firstItem="tef-Wy-wNb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bao-Vr-ojs" secondAttribute="leading" constant="20" symbolic="YES" id="Apj-4h-O50"/>
                                         <constraint firstItem="esG-Lq-76A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bao-Vr-ojs" secondAttribute="centerX" multiplier="88:187.5" symbolic="YES" id="Btg-RL-36Z"/>
                                         <constraint firstItem="esG-Lq-76A" firstAttribute="top" secondItem="bao-Vr-ojs" secondAttribute="topMargin" id="KID-IY-OKU"/>
                                         <constraint firstItem="esG-Lq-76A" firstAttribute="top" secondItem="bao-Vr-ojs" secondAttribute="topMargin" constant="10" id="TcC-na-PlV"/>

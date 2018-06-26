@@ -24,7 +24,6 @@ class TechnologyAssessmentAppTests: XCTestCase {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         self.viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "MasterTableViewController") as! MasterTableViewController
-        print(self.viewControllerUnderTest)
         
         self.viewControllerUnderTest.loadView()
         self.viewControllerUnderTest.viewDidLoad()

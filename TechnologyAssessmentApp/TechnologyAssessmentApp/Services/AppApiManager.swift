@@ -12,7 +12,7 @@ import Foundation
 class AppApiManager: NSObject
 {
 
-    func getArticlesList(completionHandler: @escaping (_ articleList: [[String:Any]]?, _ error: AppError?) -> Void)
+    func getArticlesList(completionHandler: @escaping (_ articleList: [Article]?, _ error: AppError?) -> Void)
     {
         let networkClient = AppNetworkClient.sharedInstance
         
@@ -24,13 +24,22 @@ class AppApiManager: NSObject
         networkClient.getDataFor(baseUrl: url,responseType: .json, endPoint: "", params: nil) { (json, customError) in
             if customError == nil, let response = json as? [String: Any], response["status"] as? String == "OK"
             {
-                print(response)
                 
-                if let array = response["results"] as? [[String:Any]]
+                if let networkArticles = response["results"] as? [[String:Any]]
                 {
                     
+                    var articles: [Article] = []
                     
-                  completionHandler(array, nil)
+                    // Create article objects out of a JSON object
+                    
+                    
+                    for networkArticle in networkArticles
+                    {
+                        let article = Article(jsonObject: networkArticle)
+                        articles.append(article)
+                    }
+                    
+                  completionHandler(articles, nil)
                 }
                 else
                 {

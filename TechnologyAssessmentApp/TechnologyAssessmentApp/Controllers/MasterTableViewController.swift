@@ -15,7 +15,7 @@ import MBProgressHUD
 //
 
 protocol ArticleSelectionDelegate: class {
-    func articleSelected(_ articleDetail:[String:Any]?)
+    func articleSelected(_ articleDetail:Article?)
 }
 
 class MasterTableViewController: UITableViewController
@@ -24,7 +24,7 @@ class MasterTableViewController: UITableViewController
     // MARK: Properties
     //
     var isDetailViewController:Bool = true
-    var tableDataSource = [[String:Any]]()
+    var tableDataSource = [Article]()
     weak var delegate: ArticleSelectionDelegate?
     
     
@@ -134,22 +134,20 @@ class MasterTableViewController: UITableViewController
         
         if let articleCell = tableView.dequeueReusableCell(withIdentifier:String(describing: ArticleTableViewCell.self), for: indexPath) as? ArticleTableViewCell
         {
-            
-            
-            
-            if let abstractString = tableDataSource[indexPath.row]["abstract"] as? String
+            let article = tableDataSource[indexPath.row]
+            if let abstractString = article.abstract
             {
                 articleCell.articleAbstractLabel.text = abstractString
-
+                
             }
             
-            if let byLineString = tableDataSource[indexPath.row]["byline"] as? String
+            if let byLineString = article.byLine
             {
                 articleCell.byLineLabel.text = byLineString
                 
             }
             
-            if let publishedDate = tableDataSource[indexPath.row]["published_date"] as? String
+            if let publishedDate = article.dateString
             {
                 articleCell.dateLabel.text = publishedDate
                 
@@ -157,28 +155,19 @@ class MasterTableViewController: UITableViewController
             
             
             
-            if let mediaDict = tableDataSource[indexPath.row]["media"] as? [[String:Any]],
-             let mediaMetaData = mediaDict[0]["media-metadata"] as? [[String:Any]],mediaMetaData.isEmpty == false
+            if let imageUrl = article.imageUrl
             {
                 
-                for dict in mediaMetaData {
-                    //Here compiler know type of statusDict is [String:Any]
-                    
-                    if let format = dict["format"] as? String, format == "Standard Thumbnail",let imageUrl =  dict["url"] as? String
-                    {
-                        articleCell.articleIconImageView.sd_setImage(with: URL(string:imageUrl), placeholderImage:nil)
-
-                    }
-                }
+                articleCell.articleIconImageView.sd_setImage(with: URL(string:imageUrl), placeholderImage:nil)
+                
                 
             }
-
+            
             
             
             cell = articleCell
             
-            
-            
+           
         }
         
        
@@ -195,7 +184,7 @@ class MasterTableViewController: UITableViewController
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedArticle = tableDataSource[indexPath.row] as [String:Any]
+        let selectedArticle = tableDataSource[indexPath.row]
         
         delegate?.articleSelected(selectedArticle)
         isDetailViewController = false

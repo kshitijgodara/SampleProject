@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     
-    var articleDetail: [String:Any]?
+    var article:Article?
     {
         didSet
         {
@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
     {
         loadViewIfNeeded()
         
-        if let dict = self.articleDetail,let abstractString = dict["abstract"] as? String
+        if let ar = self.article,let abstractString = ar.abstract
         {
              self.detailLabel.text = abstractString
             
@@ -52,12 +52,12 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: ArticleSelectionDelegate
 {
-    func articleSelected(_ articleDetail: [String : Any]?)
+    func articleSelected(_ articleDetail:Article?)
     {
         
         if let detail = articleDetail
         {
-            self.articleDetail = detail
+            self.article = detail
         }
         
     }
