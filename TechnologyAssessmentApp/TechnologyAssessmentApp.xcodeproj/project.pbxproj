@@ -35,6 +35,7 @@
 		E571345E20E262870090AFCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E571345C20E262860090AFCA /* Reachability.m */; };
 		E571346020E262EE0090AFCA /* AppUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571345F20E262EE0090AFCA /* AppUIConstants.swift */; };
 		E578EF3D20E2E96800FA815D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
+		E5DD512220E36CF100497759 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
 		E5FDDE3B20E2641800444361 /* AppApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FDDE3A20E2641800444361 /* AppApiManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -608,6 +609,7 @@
 				E52405E420E2939A006340B5 /* AppUIConstants.swift in Sources */,
 				E571345220E25EF40090AFCA /* AppError.swift in Sources */,
 				E54FA1F520E23DF6002A4000 /* TechnologyAssessmentAppTests.swift in Sources */,
+				E5DD512220E36CF100497759 /* Article.swift in Sources */,
 				E571345520E260030090AFCA /* AppConstants.swift in Sources */,
 				E571344E20E25EAB0090AFCA /* AppNetworkClient.swift in Sources */,
 				E571345E20E262870090AFCA /* Reachability.m in Sources */,
