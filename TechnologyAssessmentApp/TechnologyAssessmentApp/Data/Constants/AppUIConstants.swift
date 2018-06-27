@@ -8,10 +8,7 @@
 
 import UIKit
 
-struct UIMessages
-{
+struct UIMessages {
     static let noInternet = "No Internet : Please check your network connection."
     static let apiTimedOut = "Unexpected error:Please contact Administrator"
-
 }
-

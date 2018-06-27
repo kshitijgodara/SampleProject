@@ -8,16 +8,15 @@
 
 import Foundation
 
+// swiftlint:disable line_length
+
 //
 // MARK: - Private constants
 //
 let sampleKey = "54e5496eb75443aea29abca3eda6dbf6"
-
-
 //
 // MARK: - URLS
 //
-struct WebUrl
-{
+struct WebUrl {
     static let baseUrl = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/{section}/{period}.json?api-key={sampleKey}"
 }

@@ -287,6 +287,7 @@
 				E54FA1DA20E23DF6002A4000 /* Resources */,
 				3C078A4BCF1795152370BB7A /* [CP] Embed Pods Frameworks */,
 				46380883091ECE7E1DD12F7D /* [CP] Copy Pods Resources */,
+				E5B29F5E20E308A50022A6B4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -530,6 +531,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechnologyAssessmentAppTests/Pods-TechnologyAssessmentAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E5B29F5E20E308A50022A6B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"  ";
 		};
 		E7902752C7350AC17693AF63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

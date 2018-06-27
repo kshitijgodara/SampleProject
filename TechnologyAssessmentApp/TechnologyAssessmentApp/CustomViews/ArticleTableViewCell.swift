@@ -10,23 +10,20 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
 
-    
     //
     // MARK: - IBOutlets
     //
     @IBOutlet weak var articleIconImageView: UIImageView!
     @IBOutlet weak var articleAbstractLabel: UILabel!
-    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var byLineLabel: UILabel!
-    
+    //
+    // MARK: - Layouts
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-    
         self.articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
-        
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
         articleIconImageView.layer.cornerRadius = ((54.67 * UIScreen.main.bounds.width)/375.0)/2.0

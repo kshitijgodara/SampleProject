@@ -10,33 +10,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    
     //
     // MARK: - IBOutlets
     //
     @IBOutlet weak var detailLabel: UILabel!
-    
-    
-    var article:Article?
-    {
-        didSet
-        {
+    var article: Article? {
+        didSet {
             refreshUI()
         }
     }
-    
-    func refreshUI()
-    {
+    func refreshUI() {
         loadViewIfNeeded()
-        
-        if let ar = self.article,let abstractString = ar.abstract
-        {
+        if let ar = self.article, let abstractString = ar.abstract {
              self.detailLabel.text = abstractString
-            
         }
-
     }
-
 
     /*
     // MARK: - Navigation
@@ -50,17 +38,10 @@ class DetailViewController: UIViewController {
 
 }
 
-extension DetailViewController: ArticleSelectionDelegate
-{
-    func articleSelected(_ articleDetail:Article?)
-    {
-        
-        if let detail = articleDetail
-        {
+extension DetailViewController: ArticleSelectionDelegate {
+    func articleSelected(_ articleDetail: Article?) {
+        if let detail = articleDetail {
             self.article = detail
         }
-        
     }
-    
 }
-

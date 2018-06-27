@@ -8,8 +8,7 @@
 
 import Foundation
 
-enum AppErrorType:Int
-{
+enum AppErrorType: Int {
     case notReachable
     case invalidStatusCode
     case invalidUrl
@@ -18,12 +17,10 @@ enum AppErrorType:Int
     case dataNotFound
 }
 
-
 class AppError: NSObject {
-    var errorType:AppErrorType
-    var errorCode:Int?
-    var errorDesciption:String?
-    
+    var errorType: AppErrorType
+    var errorCode: Int?
+    var errorDesciption: String?
     override var description: String {
         var desc = "Error Type= \(self.errorType)"
         if let code = self.errorCode {
@@ -34,8 +31,7 @@ class AppError: NSObject {
         }
         return desc
     }
-    
-    init(type:AppErrorType, description:String = "", code:Int = 0) {
+    init(type: AppErrorType, description: String = "", code: Int = 0) {
         errorType = type
         errorCode = code
         errorDesciption = description
