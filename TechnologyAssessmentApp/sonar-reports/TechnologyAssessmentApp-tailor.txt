@@ -1,0 +1,96 @@
+Analyzing 11 files:
+SS.........
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m15:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m19:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (120/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m20:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (117/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m23:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (105/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m24:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (106/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m25:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (105/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m31:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (105/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m38:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m39:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m40:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m42:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m42:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (102/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m46:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m47:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m48:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m48:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (108/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m49:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m50:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m55:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m56:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m61:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m62:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m63:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m68:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/AppDelegate.swift:[44;30m69:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift:[44;30m22:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift:[44;30m24:[m[44;30m016:[m [43;30mwarning:[m [min-name-length] Constant name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift:[44;30m32:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (106/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift:[44;30m42:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/DetailViewController.swift:[44;30m46:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m038:[m[44;30m011:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m046:[m[44;30m013:[m [43;30mwarning:[m [min-name-length] Constant name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m049:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m053:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m062:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (104/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m068:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m072:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m081:[m[44;30m028:[m [43;30mwarning:[m [min-name-length] Constant name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m093:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m097:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m097:[m[44;30m066:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m102:[m[44;30m086:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m102:[m[44;30m094:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m107:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (109/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m111:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (101/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m123:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (112/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m128:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m129:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m129:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (103/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m131:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m132:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m159:[m[44;30m013:[m [43;30mwarning:[m [trailing-whitespace] Line should not have any trailing whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m165:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (106/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m179:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (106/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m197:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Controllers/MasterTableViewController.swift:[44;30m201:[m[44;30m030:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/CustomViews/ArticleTableViewCell.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/CustomViews/ArticleTableViewCell.swift:[44;30m23:[m[44;30m05:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/CustomViews/ArticleTableViewCell.swift:[44;30m27:[m[44;30m11:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Constants/AppConstants.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Constants/AppConstants.swift:[44;30m21:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (123/100)
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Models/AppError.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Models/AppError.swift:[44;30m11:[m[44;30m20:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Models/AppError.swift:[44;30m22:[m[44;30m20:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Data/Models/AppError.swift:[44;30m34:[m[44;30m62:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Extensions/AppExtensions.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Extensions/AppExtensions.swift:[44;30m12:[m[44;30m005:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line before it
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Extensions/AppExtensions.swift:[44;30m12:[m[44;30m074:[m [43;30mwarning:[m [min-name-length] Type name is less than minimum character limit (3/4)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Extensions/AppExtensions.swift:[44;30m21:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (108/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Extensions/AppExtensions.swift:[44;30m22:[m[44;30m006:[m [43;30mwarning:[m [function-whitespace] Function should have at least one blank line after it
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Models/Article.swift[m [44;30m**********[m
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Models/Article.swift:[44;30m39:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (124/100)
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Models/Article.swift:[44;30m41:[m[44;30m027:[m [43;30mwarning:[m [comment-whitespace] Single-line comment should start with whitespace
+/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Models/Article.swift:[44;30m42:[m[44;30m101:[m [43;30mwarning:[m [max-line-length] Line is over maximum character limit (139/100)
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Services/AppApiManager.swift[m [44;30m**********[m
+TechnologyAssessmentApp/Services/AppApiManager.swift could not be parsed successfully, skipping...
+
+[44;30m**********[m [42;30m/Users/kshitijgodara/SampleProject/TechnologyAssessmentApp/TechnologyAssessmentApp/Services/AppNetworkClient.swift[m [44;30m**********[m
+TechnologyAssessmentApp/Services/AppNetworkClient.swift could not be parsed successfully, skipping...
+
+Analyzed 9 files, skipped 2 files, and detected 69 violations (0 errors, 69 warnings).
+

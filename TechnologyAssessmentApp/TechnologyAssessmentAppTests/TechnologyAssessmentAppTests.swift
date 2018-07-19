@@ -34,9 +34,9 @@ class TechnologyAssessmentAppTests: XCTestCase {
         XCTAssertNotNil(viewControllerUnderTest?.tableView.delegate)
     }
     func testTableViewConfromsToTableViewDelegateProtocol() {
-        if let vc = viewControllerUnderTest {
-            XCTAssertTrue((vc.conforms(to: UITableViewDelegate.self)))
-            XCTAssertTrue(vc.responds(to: #selector(vc.tableView(_:didSelectRowAt:))))
+        if let vct = viewControllerUnderTest {
+            XCTAssertTrue((vct.conforms(to: UITableViewDelegate.self)))
+            XCTAssertTrue(vct.responds(to: #selector(vct.tableView(_:didSelectRowAt:))))
         }
     }
     func testTableViewHasDataSource() {
@@ -45,17 +45,17 @@ class TechnologyAssessmentAppTests: XCTestCase {
 
     }
     func testTableViewConformsToTableViewDataSourceProtocol() {
-        if let vc = viewControllerUnderTest {
-            XCTAssertTrue(vc.conforms(to: UITableViewDataSource.self))
-            XCTAssertTrue(vc.responds(to: #selector(vc.numberOfSections(in:))))
-            XCTAssertTrue(vc.responds(to: #selector(vc.tableView(_:numberOfRowsInSection:))))
-            XCTAssertTrue(vc.responds(to: #selector(vc.tableView(_:cellForRowAt:))))
+        if let vct = viewControllerUnderTest {
+            XCTAssertTrue(vct.conforms(to: UITableViewDataSource.self))
+            XCTAssertTrue(vct.responds(to: #selector(vct.numberOfSections(in:))))
+            XCTAssertTrue(vct.responds(to: #selector(vct.tableView(_:numberOfRowsInSection:))))
+            XCTAssertTrue(vct.responds(to: #selector(vct.tableView(_:cellForRowAt:))))
         }
     }
     func testTableViewCellHasReuseIdentifier() {
-        if let vc = viewControllerUnderTest {
-            if vc.tableDataSource.isEmpty == false {
-                let cell = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? ArticleTableViewCell
+        if let vct = viewControllerUnderTest {
+            if vct.tableDataSource.isEmpty == false {
+                let cell = vct.tableView(vct.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? ArticleTableViewCell
                 let actualReuseIdentifer = cell?.reuseIdentifier
                 let expectedReuseIdentifier = "ArticleTableViewCell"
                 XCTAssertEqual(actualReuseIdentifer, expectedReuseIdentifier)

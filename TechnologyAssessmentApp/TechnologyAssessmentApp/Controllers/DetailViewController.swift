@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     }
     func refreshUI() {
         loadViewIfNeeded()
-        if let ar = self.article, let abstractString = ar.abstract {
+        if let art = self.article, let abstractString = art.abstract {
              self.detailLabel.text = abstractString
         }
     }

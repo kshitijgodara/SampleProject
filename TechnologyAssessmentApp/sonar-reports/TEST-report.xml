@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TechnologyAssessmentAppUITests.xctest' tests='10' failures='0'>
+  <testsuite name='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' tests='8' failures='0'>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testExample' time='0.009'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testHasATableView' time='0.010'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testPerformanceExample' time='0.352'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testTableViewCellHasReuseIdentifier' time='0.005'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testTableViewConformsToTableViewDataSourceProtocol' time='0.008'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testTableViewConfromsToTableViewDelegateProtocol' time='0.007'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testTableViewHasDataSource' time='0.006'/>
+    <testcase classname='TechnologyAssessmentAppTests.TechnologyAssessmentAppTests' name='testTableViewHasDelegate' time='0.007'/>
+  </testsuite>
+  <testsuite name='TechnologyAssessmentAppUITests.TechnologyAssessmentAppUITests' tests='2' failures='0'>
+    <testcase classname='TechnologyAssessmentAppUITests.TechnologyAssessmentAppUITests' name='testExample' time='5.257'/>
+    <testcase classname='TechnologyAssessmentAppUITests.TechnologyAssessmentAppUITests' name='testTableInteraction' time='58.324'/>
+  </testsuite>
+</testsuites>
