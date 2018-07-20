@@ -40,9 +40,9 @@ This sample is written in Swift.Version of the sample are at the top level direc
 ## Tools
 
 - [CocoaPods](https://cocoapods.org/) - CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 33 thousand libraries and is used in over 2.2 million apps. CocoaPods can help you scale your projects elegantly.
-- [SonarQube](https://github.com/Jintin/Swimat) - SonarQube provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
+- [SonarQube V.7.2.1](https://github.com/Jintin/Swimat) - SonarQube  provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
-- [Sonar-swift](https://github.com/Backelite/sonar-swift) - This is an open source initiative for Apple Swift language support in SonarQube.
+- [Sonar-swift](https://github.com/Backelite/sonar-swift) - This is an open source plugin for Apple Swift language support in SonarQube.
 
 ## Design Patterns
 
