@@ -107,21 +107,29 @@ In Swift there are two very common implementations of this pattern: Extensions a
 ## CI/CD 
 
 * Implemented using [SonarCube](https://github.com/Backelite/sonar-swift)
-![minio_SWIFT1]()
-![minio_SWIFT1]()
 
+![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.53.48%20PM.png)
+![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.54.01%20PM.png)
 
+* Installation (once for all your Swift projects)
+- Download the plugin binary into the $SONARQUBE_HOME/extensions/plugins directory
+- Copy [run-sonar-swift.sh](https://raw.githubusercontent.com/Backelite/sonar-swift/master/sonar-swift-plugin/src/main/shell/run-sonar-swift.sh) somewhere in your PATH
+- Restart the SonarQube server.
 
-# Fastlane is used for CI
-# Install fastlane through Terminal
-# brew cask install fastlane
-# export PATH="$HOME/.fastlane/bin:$PATH"
+* Configuration (once per project)
+- Copy [sonar-project.properties](https://raw.githubusercontent.com/Backelite/sonar-swift/master/sonar-project.properties) in your Xcode project root folder (along your .xcodeproj file)
+- Edit the ```sonar-project.properties``` file to match your Xcode iOS project
+
+* Update (once per plugin update)
+- Install the lastest plugin version
+- Copy ```run-sonar-swift.sh``` somewhere in PATH
+
 
 ## Meta
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/kshitijgodara/SampleProject/edit/master/README.md](https://github.com/kshitijgodara/SampleProject/edit/master/README.md)
 
 [swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
 [swift-url]: https://swift.org/
