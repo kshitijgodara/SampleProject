@@ -64,6 +64,17 @@ The Decorator pattern dynamically adds behaviors and responsibilities to an obje
 
 In Swift there are two very common implementations of this pattern: Extensions and Delegation.
 
+## Features 
+- API class : `AppApiManager`
+- MVC pattern used (recommanded by Apple)
+- Ready to fetch others section or period (see `Parameters` struct). 
+- Modular enough to add others calls from NY Times API.
+- Ready for background fetch (using `URLSession` with delegate).
+- Models are using `Codable` protocol  (new in swift 4) : JSON parsing is quick and easy.
+- Unit Testing using XCTest
+- UI Testing using XCUITest
+- CI/CD - Sonar Qube
+
 ## Installation
 
 * Installation by cloning the repository
@@ -84,8 +95,17 @@ In Swift there are two very common implementations of this pattern: Extensions a
 * use Command+Shift+B or Product+Analyze to analyze the project
 
 
+
+
 # Step to execute test cases
 * use Command+U or Product+Test to execute the test case
+
+## Linting
+* SwiftLint is used for linting.
+
+## CI/CD 
+
+
 
 # Fastlane is used for CI
 # Install fastlane through Terminal
