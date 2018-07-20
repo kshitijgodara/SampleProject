@@ -106,6 +106,10 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 ## CI/CD 
 
+* Implemented using [SonarCube](https://github.com/Backelite/sonar-swift)
+![minio_SWIFT1]()
+![minio_SWIFT1]()
+
 
 
 # Fastlane is used for CI
