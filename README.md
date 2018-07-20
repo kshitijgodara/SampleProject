@@ -5,7 +5,6 @@ Fetch NYTimes Api to show news.
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -34,28 +33,59 @@ We will be building this app using Xcode 9.0 with Swift 4.0. This app will also 
 * Reachablity (Provided by apple for network monitoring)
 * SwiftLint   (A tool to enforce Swift style and conventions, loosely based on [GitHub's Swift Style Guide](https://github.com/github/swift-style-guide).)
 
+## 3.  Written in Swift
 
-# MVC/Decorator/Facade designs pattern is used
+This sample is written in Swift.vERSION of the sample are at the top level directory of this project in folders named TechnologyAssesmentAoo.
 
-# Step to run the project
-## Go to working Directory
-## Open TCodingAssessmentApp.xcworkspace
-## use Command+B or Product+Build to build the project
-## Press Run icon in Xcode or Command+R to run the project on Simulator
+## Tools
 
-# Step to run the project from command-line
-## Make sure command-line tools of Xcode is installed 
-## Go to working Directory
-## xcodebuild -scheme TechnologyAssessmentApp build -allowProvisioningUpdates
+- [CocoaPods](https://cocoapods.org/) - CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 33 thousand libraries and is used in over 2.2 million apps. CocoaPods can help you scale your projects elegantly.
+- [SonarQube](https://github.com/Jintin/Swimat) - SonarQube provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
+- [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
+- [Sonar-swift](https://github.com/Backelite/sonar-swift) - This is an open source initiative for Apple Swift language support in SonarQube.
+
+## Design Patterns
+
+- ### [MVC]
+
+Model-View-Controller (MVC) is one of the building blocks of Cocoa and is undoubtedly the most-used design pattern of all. It classifies objects according to their general role in your application and encourages clean separation of code based on role.
+
+![minio_SWIFT1]( https://koenig-media.raywenderlich.com/uploads/2013/07/mvc0.png)   
+
+- ### [Facade]
+
+The Facade design pattern provides a single interface to a complex subsystem. Instead of exposing the user to a set of classes and their APIs, you only expose one simple unified API.
+
+![minio_SWIFT1](https://koenig-media.raywenderlich.com/uploads/2013/07/facade2.png)
+
+- ### [Decorator]
+
+The Decorator pattern dynamically adds behaviors and responsibilities to an object without modifying its code. It’s an alternative to subclassing where you modify a class’s behavior by wrapping it with another object.
+
+In Swift there are two very common implementations of this pattern: Extensions and Delegation.
+
+## Installation
+
+* Installation by cloning the repository
+* Go to working directory
+* Open TechnologyAssessmentApp.xcworkspace
+* use command + B or Product -> Build to build the project
+* Press run icon in Xcode or command + R to run the project on Simulator
+
+## Step to run the project from command-line
+
+* Make sure command-line tools of Xcode is installed 
+* Go to working Directory
+* xcodebuild -scheme TechnologyAssessmentApp build -allowProvisioningUpdates
 
 
-# Step to static code coverage 
-## Open TechnologyAssessmentApp.xcworkspace
-## use Command+Shift+B or Product+Analyze to analyze the project
+## Step to static code coverage 
+* Open TechnologyAssessmentApp.xcworkspace
+* use Command+Shift+B or Product+Analyze to analyze the project
 
 
 # Step to execute test cases
-## use Command+U or Product+Test to execute the test case
+* use Command+U or Product+Test to execute the test case
 
 # Fastlane is used for CI
 # Install fastlane through Terminal
