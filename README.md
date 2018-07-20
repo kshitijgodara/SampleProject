@@ -126,9 +126,9 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 ## Meta
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/kshitijgodara](https://github.com/kshitijgodara)
+[License](https://github.com/kshitijgodara/SampleProject/blob/master/LICENSE.md)
 
 [swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
 [swift-url]: https://swift.org/
