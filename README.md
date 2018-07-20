@@ -79,7 +79,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 * Installation by cloning the repository
 * Go to working directory
 * Open TechnologyAssessmentApp.xcworkspace
-* use command + B or Product -> Build to build the project
+* Use command + B or Product -> Build to build the project
 * Press run icon in Xcode or command + R to run the project on Simulator
 
 ## Step to run the project from command-line
