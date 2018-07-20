@@ -98,7 +98,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 
 # Step to execute test cases
-* use Command+U or Product+Test to execute the test case
+* Use Command+U or Product+Test to execute the test case
 
 ## Linting
 * SwiftLint is used for linting.
@@ -124,7 +124,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 - Copy ```run-sonar-swift.sh``` somewhere in PATH
 
 
-## Meta
+## License
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
