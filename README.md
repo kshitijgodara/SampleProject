@@ -18,7 +18,7 @@ Fetch NYTimes Api to show news.
 ## Build and Runtime Requirements
 + Xcode 9.0 or later
 + iOS 10.0 or later
-+ OS X v10.13 or later
++ Mac OS X v10.13 or later
 
 ##  1. Dependencies
 
@@ -35,7 +35,7 @@ We will be building this app using Xcode 9.0 with Swift 4.0. This app will also 
 
 ## 3.  Written in Swift
 
-This sample is written in Swift.vERSION of the sample are at the top level directory of this project in folders named TechnologyAssesmentAoo.
+This sample is written in Swift.Version of the sample are at the top level directory of this project in folders named TechnologyAssesmentApp.
 
 ## Tools
 
@@ -70,7 +70,6 @@ In Swift there are two very common implementations of this pattern: Extensions a
 - Ready to fetch others section or period (see `Parameters` struct). 
 - Modular enough to add others calls from NY Times API.
 - Ready for background fetch (using `URLSession` with delegate).
-- Models are using `Codable` protocol  (new in swift 4) : JSON parsing is quick and easy.
 - Unit Testing using XCTest
 - UI Testing using XCUITest
 - CI/CD - Sonar Qube
