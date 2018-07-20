@@ -94,6 +94,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 * Open TechnologyAssessmentApp.xcworkspace
 * use Command+Shift+B or Product+Analyze to analyze the project
 
+![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.52.19%20PM.png)
 
 
 
