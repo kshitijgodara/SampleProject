@@ -46,19 +46,19 @@ This sample is written in Swift.Version of the sample are at the top level direc
 
 ## Design Patterns
 
-- ### [MVC]
+- ### MVC
 
 Model-View-Controller (MVC) is one of the building blocks of Cocoa and is undoubtedly the most-used design pattern of all. It classifies objects according to their general role in your application and encourages clean separation of code based on role.
 
 ![minio_SWIFT1]( https://koenig-media.raywenderlich.com/uploads/2013/07/mvc0.png)   
 
-- ### [Facade]
+- ### Facade
 
 The Facade design pattern provides a single interface to a complex subsystem. Instead of exposing the user to a set of classes and their APIs, you only expose one simple unified API.
 
 ![minio_SWIFT1](https://koenig-media.raywenderlich.com/uploads/2013/07/facade2.png)
 
-- ### [Decorator]
+- ### Decorator
 
 The Decorator pattern dynamically adds behaviors and responsibilities to an object without modifying its code. It’s an alternative to subclassing where you modify a class’s behavior by wrapping it with another object.
 
