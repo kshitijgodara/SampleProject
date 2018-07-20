@@ -9,6 +9,9 @@ Fetch NYTimes Api to show news.
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/01.png)
+
+
 ## Version
 
 1.0
