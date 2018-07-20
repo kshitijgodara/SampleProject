@@ -128,7 +128,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/kshitijgodara/SampleProject/edit/master/README.md](https://github.com/kshitijgodara/SampleProject/edit/master/README.md)
+[https://github.com/kshitijgodara](https://github.com/kshitijgodara)
 
 [swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
 [swift-url]: https://swift.org/
