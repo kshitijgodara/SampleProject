@@ -40,9 +40,9 @@ This sample is written in Swift.Version of the sample are at the top level direc
 ## Tools
 
 - [CocoaPods](https://cocoapods.org/) - CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 33 thousand libraries and is used in over 2.2 million apps. CocoaPods can help you scale your projects elegantly.
-- [SonarQube V.7.2.1](https://github.com/Jintin/Swimat) - SonarQube  provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
+- [SonarQube 7.2.1](https://github.com/Jintin/Swimat) - SonarQube  provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
-- [Sonar-swift](https://github.com/Backelite/sonar-swift) - This is an open source plugin for Apple Swift language support in SonarQube.
+- [Sonar-swift 0.3.7 ](https://github.com/Backelite/sonar-swift) - This is an open source plugin for Apple Swift language support in SonarQube.
 
 ## Design Patterns
 
@@ -91,7 +91,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 ## Step to static code coverage 
 * Open TechnologyAssessmentApp.xcworkspace
-* use Command+Shift+B or Product+Analyze to analyze the project
+* Use Command+Shift+B or Product+Analyze to analyze the project
 
 ![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.52.19%20PM.png)
 
