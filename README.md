@@ -105,7 +105,7 @@ In Swift there are two very common implementations of this pattern: Extensions a
 
 ## CI/CD 
 
-* Implemented using [SonarCube](https://github.com/Backelite/sonar-swift)
+* Implemented using [SonarQube](https://github.com/Backelite/sonar-swift)
 
 ![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.53.48%20PM.png)
 ![minio_SWIFT1](https://github.com/kshitijgodara/SampleProject/blob/master/Screen%20Shot%202018-07-20%20at%202.54.01%20PM.png)
