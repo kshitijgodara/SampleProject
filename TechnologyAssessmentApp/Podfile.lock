@@ -1,0 +1,26 @@
+PODS:
+  - MBProgressHUD (1.1.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SwiftLint (0.26.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.1.0)
+  - SDWebImage (~> 4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+    - SDWebImage
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+
+PODFILE CHECKSUM: acd5d481cdf5421b99f8003a3c647f0539e1ff67
+
+COCOAPODS: 1.5.3
