@@ -1,6 +1,0 @@
-framework module Pods_TechnologyAssessmentAppUITests {
-  umbrella header "Pods-TechnologyAssessmentAppUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
