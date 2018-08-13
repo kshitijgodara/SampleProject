@@ -82,7 +82,14 @@ In Swift there are two very common implementations of this pattern: Extensions a
 * Open TechnologyAssessmentApp.xcworkspace
 * Use command + B or Product -> Build to build the project
 * Press run icon in Xcode or command + R to run the project on Simulator
-* To run on iphone device,For Signing Kindly Select your team in xcode general tab.
+
+## Code Signing
+
+* Select the project from XCode.
+* Go to "General" section.
+* Click "Team" under Signing section. Switch it from "None" to your existing team. If you don't have one, select 
+  "Add an  account" to add your own Apple account.
+
 
 ## Step to run the project from command-line
 
