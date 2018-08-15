@@ -20,6 +20,7 @@ Fetch NYTimes Api to show news.
 + iOS 10.0 or later
 + Mac OS X v10.13 or later
 
+
 ##  1. Dependencies
 
 We will be building this app using Xcode 9.0 with Swift 4.0. This app will also consume the NYTimes API Service  built to get news according to days.
@@ -81,6 +82,14 @@ In Swift there are two very common implementations of this pattern: Extensions a
 * Open TechnologyAssessmentApp.xcworkspace
 * Use command + B or Product -> Build to build the project
 * Press run icon in Xcode or command + R to run the project on Simulator
+
+## Code Signing
+
+* Select the project from XCode.
+* Go to "General" section.
+* Click "Team" under Signing section. Switch it from "None" to your existing team. If you don't have one, select 
+  "Add an  account" to add your own Apple account.
+
 
 ## Step to run the project from command-line
 
