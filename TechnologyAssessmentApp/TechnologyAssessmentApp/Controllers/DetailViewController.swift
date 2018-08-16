@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     // MARK: - IBOutlets
     //
     @IBOutlet weak var detailLabel: UILabel!
-    var article: Article? {
+    var article: ArticleViewModel? {
         didSet {
             refreshUI()
         }
@@ -25,21 +25,10 @@ class DetailViewController: UIViewController {
              self.detailLabel.text = abstractString
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension DetailViewController: ArticleSelectionDelegate {
-    func articleSelected(_ articleDetail: Article?) {
+    func articleSelected(_ articleDetail: ArticleViewModel?) {
         if let detail = articleDetail {
             self.article = detail
         }
