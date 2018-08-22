@@ -25,7 +25,6 @@ class MasterTableViewController: UITableViewController {
     // MARK: Properties
     //
     var isDetailViewController: Bool = true
-    var tableDataSource = [Article]()
     var viewModels = [ArticleViewModel]()
 
     weak var delegate: ArticleSelectionDelegate?
