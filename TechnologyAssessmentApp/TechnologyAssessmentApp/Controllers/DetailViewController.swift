@@ -21,8 +21,8 @@ class DetailViewController: UIViewController {
     }
     func refreshUI() {
         loadViewIfNeeded()
-        if let art = self.article, let abstractString = art.abstract {
-             self.detailLabel.text = abstractString
+        if let art = article, let abstractString = art.abstract {
+             detailLabel.text = abstractString
         }
     }
 }
@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
 extension DetailViewController: MasterTableViewSelectionDelegate {
     func articleSelected(_ articleDetail: ArticleViewModel?) {
         if let detail = articleDetail {
-            self.article = detail
+            article = detail
         }
     }
 }

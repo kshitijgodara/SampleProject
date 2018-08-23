@@ -23,7 +23,7 @@ class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
+        articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
         articleIconImageView.layer.cornerRadius = ((49 * UIScreen.main.bounds.width)/375.0)/2.0

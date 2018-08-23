@@ -56,7 +56,7 @@ class AppNetworkClient: NSObject {
             request.httpMethod = "GET"
             // Create a dataTask with a closure that defines the comletion handler
             // The closure in this case is defined as completionHandler: { (data, response, error) in  ... }
-            self.networkCallFor(request: request, responseType: responseType, completionBlock: completionHandler)
+            networkCallFor(request: request, responseType: responseType, completionBlock: completionHandler)
         } else {
             let error = AppError.init(type: .invalidUrl, description: "Could not generate URL for given end point and parameters")
             completionHandler(nil, error)
@@ -74,7 +74,7 @@ extension AppNetworkClient {
         let session = URLSession(configuration: config, delegate: self, delegateQueue: nil)
         // Ensure that an error is not present, otherwise, return the error
 
-        self.task = session.dataTask(with: newRequest, completionHandler: { (data, response, error) in
+        task = session.dataTask(with: newRequest, completionHandler: { (data, response, error) in
                 DispatchQueue.main.async {
                         let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
                         var customError: AppError?
@@ -114,10 +114,10 @@ extension AppNetworkClient {
                         completionBlock(receivedResponse, customError)
                 }
         })
-        self.task?.resume()
+        task?.resume()
     }
     func cancelNetworkCall() {
-        self.task?.cancel()
+        task?.cancel()
     }
 }
 

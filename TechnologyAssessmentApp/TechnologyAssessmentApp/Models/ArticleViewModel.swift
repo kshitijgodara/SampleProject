@@ -41,16 +41,16 @@ struct ArticleViewModel {
             } else {
                 if let networkObject = jsonObject[value] as? String {
                     if key == "abstract" {
-                        self.abstract = networkObject
+                        abstract = networkObject
                     }
                     if key == "byline" {
-                        self.byLine = networkObject
+                        byLine = networkObject
                     }
                     if key == "published_date" {
-                        self.dateString = networkObject
+                       dateString = networkObject
                     }
                     if key == "url" {
-                        self.URLLink = networkObject
+                        URLLink = networkObject
                     }
                 }
             }

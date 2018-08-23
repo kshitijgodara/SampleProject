@@ -36,18 +36,18 @@ class MasterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Assign the split view controller delegate to the MasterTableViewController
-        self.splitViewController?.delegate = self
+        splitViewController?.delegate = self
         //to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
+        clearsSelectionOnViewWillAppear = false
         // Tableview setup
-        self.tableView.tableFooterView = UIView()
-        self.tableView.estimatedRowHeight = 115
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.accessibilityIdentifier = "table--articleTableView"
+        tableView.tableFooterView = UIView()
+        tableView.estimatedRowHeight = 115
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.accessibilityIdentifier = "table--articleTableView"
         // Network Call
-        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud.label.text = "Fetching articles..."
-        self.fetchArticleList()
+        fetchArticleList()
     }
     //
     // MARK: Memory Managment
@@ -66,7 +66,7 @@ class MasterTableViewController: UITableViewController {
             completion?()
         }
         alertConteroller.addAction(actionOk)
-        self.present(alertConteroller, animated: true, completion: nil)
+        present(alertConteroller, animated: true, completion: nil)
     }
     //
     // MARK: - Network Methods
@@ -75,9 +75,7 @@ class MasterTableViewController: UITableViewController {
         // Check Internet Connectivity
         if Reachability.isConnectedToNetwork() == true {
             AppApiManager().getArticlesList { [weak self] (response, customError) in
-                
                 if let strongSelf = self {
-                    
                     MBProgressHUD.hide(for: strongSelf.view, animated: true)
                     if customError != nil {
                         // Display error alert with usage of unowned self that an error is present
@@ -91,9 +89,8 @@ class MasterTableViewController: UITableViewController {
                     }
                 }
             }
-        }
-        else{
-            self.showAlertWith(title: nil, message: UIMessages.noInternet)
+        } else {
+            showAlertWith(title: nil, message: UIMessages.noInternet)
 
         }
     }
@@ -112,7 +109,7 @@ class ArticleDataSource: CollectionArrayDataSource<ArticleViewModel, ArticleTabl
 // MARK: - Private Methods
 fileprivate extension MasterTableViewController {
     func setUpDataSource() -> ArticleDataSource? {
-        let dataSource = ArticleDataSource(tableView: self.tableView, array: self.viewModels)
+        let dataSource = ArticleDataSource(tableView: tableView, array: viewModels)
         dataSource.tableRowSelectionHandler = { [weak self] indexpath in
             guard  let strongSelf = self else {
                 return
