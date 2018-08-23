@@ -7,9 +7,8 @@
 //
 
 import UIKit
-
-open class CollectionArrayDataSource<T, Cell: UITableViewCell>: TableViewDataSource<ArrayDataProvider<T>, Cell>
-    where Cell: ConfigurableCell, Cell.T == T {
+class CollectionArrayDataSource<T, Cell: UITableViewCell>: TableViewDataSource<ArrayDataProvider<T>, Cell>
+where Cell: ConfigurableCell, Cell.GenericType == T {
     // MARK: - Lifecycle
     public convenience init(tableView: UITableView, array: T) {
         self.init(tableView: tableView, array: [array])

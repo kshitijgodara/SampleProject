@@ -7,12 +7,7 @@
 //
 
 import Foundation
-
-//swiftlint:disable all
-
-public protocol ConfigurableCell: ReusableCell
-{
-    associatedtype T
-    
-    func configure(_ item: T, at indexPath: IndexPath)
+public protocol ConfigurableCell: ReusableCell {
+    associatedtype GenericType
+    func configure(_ item: GenericType, at indexPath: IndexPath)
 }
