@@ -74,20 +74,25 @@ class MasterTableViewController: UITableViewController {
     func fetchArticleList() {
         // Check Internet Connectivity
         if Reachability.isConnectedToNetwork() == true {
-            AppApiManager().getArticlesList { (response, customError) in
-                MBProgressHUD.hide(for: self.view, animated: true)
-                if customError != nil {
-                    // Display error alert with usage of unowned self that an error is present
-                    self.showAlertWith(title: nil, message: customError?.description)
-                 } else {
-                    if let res = response {
-                        self.tableView.isHidden = false
-                        self.viewModels = res
-                        self.articleDataSource = self.setUpDataSource()
+            AppApiManager().getArticlesList { [weak self] (response, customError) in
+                
+                if let strongSelf = self {
+                    
+                    MBProgressHUD.hide(for: strongSelf.view, animated: true)
+                    if customError != nil {
+                        // Display error alert with usage of unowned self that an error is present
+                        strongSelf.showAlertWith(title: nil, message: customError?.description)
+                    } else {
+                        if let res = response {
+                            strongSelf.tableView.isHidden = false
+                            strongSelf.viewModels = res
+                            strongSelf.articleDataSource = strongSelf.setUpDataSource()
+                        }
                     }
                 }
             }
-        } else {
+        }
+        else{
             self.showAlertWith(title: nil, message: UIMessages.noInternet)
 
         }
