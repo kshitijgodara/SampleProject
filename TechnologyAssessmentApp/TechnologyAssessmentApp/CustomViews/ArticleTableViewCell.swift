@@ -26,7 +26,7 @@ class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
         self.articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
-        articleIconImageView.layer.cornerRadius = ((54.67 * UIScreen.main.bounds.width)/375.0)/2.0
+        articleIconImageView.layer.cornerRadius = ((49 * UIScreen.main.bounds.width)/375.0)/2.0
         articleIconImageView.layer.masksToBounds = true
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
