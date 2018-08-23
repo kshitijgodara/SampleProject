@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
     }
 }
 
-extension DetailViewController: ArticleSelectionDelegate {
+extension DetailViewController: MasterTableViewSelectionDelegate {
     func articleSelected(_ articleDetail: ArticleViewModel?) {
         if let detail = articleDetail {
             self.article = detail

@@ -16,7 +16,7 @@ import MBProgressHUD
 // MARK: Protocol Defination
 //
 
-protocol ArticleSelectionDelegate: class {
+protocol MasterTableViewSelectionDelegate: class {
     func articleSelected(_ articleDetail: ArticleViewModel?)
 }
 
@@ -27,7 +27,7 @@ class MasterTableViewController: UITableViewController {
     var isDetailViewController: Bool = true
     var viewModels = [ArticleViewModel]()
 
-    weak var delegate: ArticleSelectionDelegate?
+    weak var delegate: MasterTableViewSelectionDelegate?
     fileprivate var articleDataSource: ArticleDataSource?
     fileprivate var selectedIndexPath: IndexPath?
     //
