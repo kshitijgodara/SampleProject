@@ -113,9 +113,7 @@ fileprivate extension MasterTableViewController {
     func setUpDataSource() -> ArticleDataSource? {
         let dataSource = ArticleDataSource(tableView: tableView, array: viewModels)
         dataSource.tableRowSelectionHandler = { [weak self] indexpath in
-            guard  let strongSelf = self else {
-                return
-            }
+            guard  let strongSelf = self else { return }
             strongSelf.selectedIndexPath  = indexpath
             let viewModel = strongSelf.articleDataSource?.row(at: indexpath)
 
