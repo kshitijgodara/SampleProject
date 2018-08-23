@@ -14,7 +14,7 @@ where Cell: ConfigurableCell, Cell.GenericType == T {
         self.init(tableView: tableView, array: [array])
     }
     public  init(tableView: UITableView, array: [T]) {
-         let provider = ArrayDataProvider(array: array)
+        let provider = ArrayDataProvider(array: array)
         super.init(tableView: tableView, provider: provider)
     }
     // MARK: - Public Methods
