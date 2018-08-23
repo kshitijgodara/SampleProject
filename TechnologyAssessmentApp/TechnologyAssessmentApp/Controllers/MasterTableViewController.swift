@@ -45,8 +45,6 @@ class MasterTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.accessibilityIdentifier = "table--articleTableView"
         // Network Call
-        let hud = MBProgressHUD.showAdded(to: view, animated: true)
-        hud.label.text = "Fetching articles..."
         fetchArticleList()
     }
     //
@@ -72,6 +70,10 @@ class MasterTableViewController: UITableViewController {
     // MARK: - Network Methods
     //
     func fetchArticleList() {
+        
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = "Fetching articles..."
+        
         // Check Internet Connectivity
         if Reachability.isConnectedToNetwork() == true {
             AppApiManager().getArticlesList { [weak self] (response, customError) in
