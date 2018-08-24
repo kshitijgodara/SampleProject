@@ -14,21 +14,21 @@ class DetailViewController: UIViewController {
     // MARK: - IBOutlets
     //
     @IBOutlet weak var detailLabel: UILabel!
-    var article: ArticleViewModel? {
+    var article: Result? {
         didSet {
             refreshUI()
         }
     }
     func refreshUI() {
         loadViewIfNeeded()
-        if let art = article, let abstractString = art.abstract {
-             detailLabel.text = abstractString
+        if let art = article {
+             detailLabel.text = art.abstract
         }
     }
 }
 
 extension DetailViewController: MasterTableViewSelectionDelegate {
-    func articleSelected(_ articleDetail: ArticleViewModel?) {
+    func articleSelected(_ articleDetail: Result?) {
         if let detail = articleDetail {
             article = detail
         }

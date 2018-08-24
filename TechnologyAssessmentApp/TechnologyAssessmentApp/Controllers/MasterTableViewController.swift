@@ -17,7 +17,7 @@ import MBProgressHUD
 //
 
 protocol MasterTableViewSelectionDelegate: class {
-    func articleSelected(_ articleDetail: ArticleViewModel?)
+    func articleSelected(_ articleDetail: Result?)
 }
 
 class MasterTableViewController: UITableViewController {
@@ -25,8 +25,7 @@ class MasterTableViewController: UITableViewController {
     // MARK: Properties
     //
     var isDetailViewController: Bool = true
-    var viewModels = [ArticleViewModel]()
-
+    var viewModel: ArticleViewModel?
     weak var delegate: MasterTableViewSelectionDelegate?
     fileprivate var articleDataSource: ArticleDataSource?
     //
@@ -82,7 +81,7 @@ class MasterTableViewController: UITableViewController {
                     } else {
                         if let res = response {
                             strongSelf.tableView.isHidden = false
-                            strongSelf.viewModels = res
+                            strongSelf.viewModel = res
                             strongSelf.articleDataSource = strongSelf.setUpDataSource()
                         }
                     }
@@ -103,23 +102,27 @@ extension MasterTableViewController: UISplitViewControllerDelegate {
 }
 
 // MARK: - Data Source
-class ArticleDataSource: CollectionArrayDataSource<ArticleViewModel, ArticleTableViewCell> {}
+class ArticleDataSource: CollectionArrayDataSource<Result, ArticleTableViewCell> {}
 
 // MARK: - Private Methods
 fileprivate extension MasterTableViewController {
     func setUpDataSource() -> ArticleDataSource? {
-        let dataSource = ArticleDataSource(tableView: tableView, array: viewModels)
-        dataSource.tableRowSelectionHandler = { [weak self] indexpath in
-            guard  let strongSelf = self else { return }
-            let viewModel = strongSelf.articleDataSource?.row(at: indexpath)
 
-           strongSelf.delegate?.articleSelected(viewModel)
-           strongSelf.isDetailViewController = false
-            if let detailViewController = strongSelf.delegate as? DetailViewController,
-                let detailNavigationController = detailViewController.navigationController {
-                strongSelf.splitViewController?.showDetailViewController(detailNavigationController, sender: nil)
+        if let articleModel = viewModel {
+            let dataSource = ArticleDataSource(tableView: tableView, array: articleModel.results)
+            dataSource.tableRowSelectionHandler = { [weak self] indexpath in
+                guard  let strongSelf = self else { return }
+                let viewModel = strongSelf.articleDataSource?.row(at: indexpath)
+                strongSelf.delegate?.articleSelected(viewModel)
+                strongSelf.isDetailViewController = false
+                if let detailViewController = strongSelf.delegate as? DetailViewController,
+                    let detailNavigationController = detailViewController.navigationController {
+                    strongSelf.splitViewController?.showDetailViewController(detailNavigationController, sender: nil)
+                }
             }
+            return dataSource
+        } else {
+            return nil
         }
-        return dataSource
     }
 }

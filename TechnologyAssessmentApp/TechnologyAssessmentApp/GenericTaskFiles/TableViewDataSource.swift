@@ -12,7 +12,7 @@ public typealias TableRowSelectionHandlerType = (IndexPath) -> Void
 open class TableViewDataSource<Provider: CollectionDataProvider, Cell: UITableViewCell>: NSObject,
     UITableViewDataSource,
     UITableViewDelegate
-where Cell: ConfigurableCell, Provider.T == Cell.GenericType {
+where Cell: ConfigurableCell, Provider.DataProviderType == Cell.GenericType {
     // MARK: - Delegates
     public var tableRowSelectionHandler: TableRowSelectionHandlerType?
     // MARK: - Private Properties

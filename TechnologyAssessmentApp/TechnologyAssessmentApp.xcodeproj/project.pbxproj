@@ -32,7 +32,6 @@
 		E571345D20E262870090AFCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E571345C20E262860090AFCA /* Reachability.m */; };
 		E571345E20E262870090AFCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E571345C20E262860090AFCA /* Reachability.m */; };
 		E571346020E262EE0090AFCA /* AppUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571345F20E262EE0090AFCA /* AppUIConstants.swift */; };
-		E578EF3D20E2E96800FA815D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
 		E5C93F4921256A2600206D4D /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4421256A2600206D4D /* CollectionDataProvider.swift */; };
 		E5C93F4A21256A2600206D4D /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4421256A2600206D4D /* CollectionDataProvider.swift */; };
 		E5C93F4B21256A2600206D4D /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4521256A2600206D4D /* ConfigurableCell.swift */; };
@@ -43,17 +42,16 @@
 		E5C93F5021256A2600206D4D /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4721256A2600206D4D /* ArrayDataProvider.swift */; };
 		E5C93F5121256A2600206D4D /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4821256A2600206D4D /* CollectionArrayDataSource.swift */; };
 		E5C93F5221256A2600206D4D /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4821256A2600206D4D /* CollectionArrayDataSource.swift */; };
-		E5C93F5421256A5000206D4D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5321256A4F00206D4D /* ArticleViewModel.swift */; };
-		E5C93F5521256A5000206D4D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5321256A4F00206D4D /* ArticleViewModel.swift */; };
 		E5C93F5721256A5700206D4D /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5621256A5700206D4D /* ReusableCell.swift */; };
 		E5C93F5821256A5700206D4D /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5621256A5700206D4D /* ReusableCell.swift */; };
 		E5C93F5A21256A8000206D4D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5921256A8000206D4D /* MasterTableViewController.swift */; };
 		E5C93F5B21256A8000206D4D /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5921256A8000206D4D /* MasterTableViewController.swift */; };
 		E5C93F5D21256AA700206D4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5C21256AA700206D4D /* DetailViewController.swift */; };
 		E5C93F5E21256AA700206D4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5C21256AA700206D4D /* DetailViewController.swift */; };
-		E5C93F5F21256B3800206D4D /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F5321256A4F00206D4D /* ArticleViewModel.swift */; };
 		E5C93F6021256B6D00206D4D /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C93F4521256A2600206D4D /* ConfigurableCell.swift */; };
-		E5DD512220E36CF100497759 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
+		E5F3CFD0212FDA2100529C8C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3CFCF212FDA2100529C8C /* ArticleViewModel.swift */; };
+		E5F3CFD1212FDA2100529C8C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3CFCF212FDA2100529C8C /* ArticleViewModel.swift */; };
+		E5F3CFD2212FDA2100529C8C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3CFCF212FDA2100529C8C /* ArticleViewModel.swift */; };
 		E5FDDE3B20E2641800444361 /* AppApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FDDE3A20E2641800444361 /* AppApiManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,16 +104,15 @@
 		E571345B20E262860090AFCA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E571345C20E262860090AFCA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E571345F20E262EE0090AFCA /* AppUIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIConstants.swift; sourceTree = "<group>"; };
-		E578EF3C20E2E96700FA815D /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E5C93F4421256A2600206D4D /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
 		E5C93F4521256A2600206D4D /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		E5C93F4621256A2600206D4D /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		E5C93F4721256A2600206D4D /* ArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
 		E5C93F4821256A2600206D4D /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
-		E5C93F5321256A4F00206D4D /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		E5C93F5621256A5700206D4D /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		E5C93F5921256A8000206D4D /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		E5C93F5C21256AA700206D4D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E5F3CFCF212FDA2100529C8C /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		E5FDDE3A20E2641800444361 /* AppApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,8 +170,7 @@
 		E52405DB20E2923D006340B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5C93F5321256A4F00206D4D /* ArticleViewModel.swift */,
-				E578EF3C20E2E96700FA815D /* Article.swift */,
+				E5F3CFCF212FDA2100529C8C /* ArticleViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -554,7 +550,6 @@
 				E5C93F4F21256A2600206D4D /* ArrayDataProvider.swift in Sources */,
 				E5C93F4D21256A2600206D4D /* TableViewDataSource.swift in Sources */,
 				E571344D20E25EAB0090AFCA /* AppNetworkClient.swift in Sources */,
-				E578EF3D20E2E96800FA815D /* Article.swift in Sources */,
 				E5FDDE3B20E2641800444361 /* AppApiManager.swift in Sources */,
 				E5C93F5D21256AA700206D4D /* DetailViewController.swift in Sources */,
 				E5C93F5721256A5700206D4D /* ReusableCell.swift in Sources */,
@@ -562,7 +557,7 @@
 				E5C93F5A21256A8000206D4D /* MasterTableViewController.swift in Sources */,
 				E571345D20E262870090AFCA /* Reachability.m in Sources */,
 				E5C93F5121256A2600206D4D /* CollectionArrayDataSource.swift in Sources */,
-				E5C93F5421256A5000206D4D /* ArticleViewModel.swift in Sources */,
+				E5F3CFD0212FDA2100529C8C /* ArticleViewModel.swift in Sources */,
 				E571345720E261BA0090AFCA /* AppExtensions.swift in Sources */,
 				E5C93F4921256A2600206D4D /* CollectionDataProvider.swift in Sources */,
 			);
@@ -573,11 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E571344120E256690090AFCA /* ArticleTableViewCell.swift in Sources */,
-				E5C93F5521256A5000206D4D /* ArticleViewModel.swift in Sources */,
 				E52405E420E2939A006340B5 /* AppUIConstants.swift in Sources */,
 				E571345220E25EF40090AFCA /* AppError.swift in Sources */,
 				E54FA1F520E23DF6002A4000 /* TechnologyAssessmentAppTests.swift in Sources */,
-				E5DD512220E36CF100497759 /* Article.swift in Sources */,
 				E571345520E260030090AFCA /* AppConstants.swift in Sources */,
 				E5C93F4C21256A2600206D4D /* ConfigurableCell.swift in Sources */,
 				E5C93F4A21256A2600206D4D /* CollectionDataProvider.swift in Sources */,
@@ -589,6 +582,7 @@
 				E5C93F5B21256A8000206D4D /* MasterTableViewController.swift in Sources */,
 				E52405E320E2938D006340B5 /* AppApiManager.swift in Sources */,
 				E5C93F5021256A2600206D4D /* ArrayDataProvider.swift in Sources */,
+				E5F3CFD1212FDA2100529C8C /* ArticleViewModel.swift in Sources */,
 				E571345820E261BA0090AFCA /* AppExtensions.swift in Sources */,
 				E5C93F5821256A5700206D4D /* ReusableCell.swift in Sources */,
 			);
@@ -598,8 +592,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5C93F5F21256B3800206D4D /* ArticleViewModel.swift in Sources */,
 				E571344220E256690090AFCA /* ArticleTableViewCell.swift in Sources */,
+				E5F3CFD2212FDA2100529C8C /* ArticleViewModel.swift in Sources */,
 				E5C93F6021256B6D00206D4D /* ConfigurableCell.swift in Sources */,
 				E54FA20020E23DF6002A4000 /* TechnologyAssessmentAppUITests.swift in Sources */,
 			);

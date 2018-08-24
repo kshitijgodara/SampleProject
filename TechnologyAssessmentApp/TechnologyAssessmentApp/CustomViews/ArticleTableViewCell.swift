@@ -34,18 +34,10 @@ class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
         // Configure the view for the selected state
     }
     // MARK: - ConfigurableCell
-    func configure(_ item: ArticleViewModel, at indexPath: IndexPath) {
-        if let abstractString = item.abstract {
-            articleAbstractLabel.text = abstractString
-        }
-        if let byLineString = item.byLine {
-            byLineLabel.text = byLineString
-        }
-        if let publishedDate = item.dateString {
-            dateLabel.text = publishedDate
-        }
-        if let imageUrl = item.imageUrl {
-            articleIconImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: nil)
-        }
+    func configure(_ item: Result, at indexPath: IndexPath) {
+        articleAbstractLabel.text = item.abstract
+        byLineLabel.text = item.byline
+        dateLabel.text = item.publishedDate
+        articleIconImageView.sd_setImage(with: URL(string: item.media[0].mediaMetadata[0].url), placeholderImage: nil)
     }
 }

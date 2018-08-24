@@ -8,12 +8,10 @@
 
 import Foundation
 
-//swiftlint:disable all
-
 public protocol CollectionDataProvider {
-    associatedtype T
+    associatedtype DataProviderType
     func numberOfSections() -> Int
     func numberOfRows(in section: Int) -> Int
-    func row(at indexPath: IndexPath) -> T?
+    func row(at indexPath: IndexPath) -> DataProviderType?
 
 }
