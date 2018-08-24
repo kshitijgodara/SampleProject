@@ -9,7 +9,7 @@
 import UIKit
 
 public typealias TableRowSelectionHandlerType = (IndexPath) -> Void
-open class TableViewDataSource<Provider: CollectionDataProvider, Cell: UITableViewCell>: NSObject,
+class TableViewDataSource<Provider: CollectionDataProvider, Cell: UITableViewCell>: NSObject,
     UITableViewDataSource,
     UITableViewDelegate
 where Cell: ConfigurableCell, Provider.DataProviderType == Cell.GenericType {
