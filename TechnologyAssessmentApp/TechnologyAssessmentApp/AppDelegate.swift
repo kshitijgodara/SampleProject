@@ -15,19 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
-        // A split view controller has an array property viewControllers that has the master and detail view controllers
-        // inside. The master view controller in our case is actually a navigation controller, so we get the top view
-        // controller from that to get our MasterViewController instance
-        guard let splitViewController = window?.rootViewController as? UISplitViewController,
-            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
-            let masterViewController = leftNavController.topViewController as?  MasterTableViewController,
-            let rightNavController = splitViewController.viewControllers.last as? UINavigationController,
-            let detailViewController = rightNavController.topViewController as? DetailViewController
-            else { fatalError() }
-        masterViewController.delegate = detailViewController
-        splitViewController.preferredDisplayMode = .allVisible
-        detailViewController.navigationItem.leftItemsSupplementBackButton = true
-        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+//        // A split view controller has an array property viewControllers that has the master and detail view controllers
+//        // inside. The master view controller in our case is actually a navigation controller, so we get the top view
+//        // controller from that to get our MasterViewController instance
+//        guard let splitViewController = window?.rootViewController as? UISplitViewController,
+//            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
+//            let masterViewController = leftNavController.topViewController as?  MasterTableViewController,
+//            let rightNavController = splitViewController.viewControllers.last as? UINavigationController,
+//            let detailViewController = rightNavController.topViewController as? DetailViewController
+//            else { fatalError() }
+//        masterViewController.delegate = detailViewController
+//        splitViewController.preferredDisplayMode = .allVisible
+//        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+//        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         // Override point for customization after application launch.
         return true
     }

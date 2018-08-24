@@ -34,6 +34,15 @@
 		E571345D20E262870090AFCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E571345C20E262860090AFCA /* Reachability.m */; };
 		E571345E20E262870090AFCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E571345C20E262860090AFCA /* Reachability.m */; };
 		E571346020E262EE0090AFCA /* AppUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571345F20E262EE0090AFCA /* AppUIConstants.swift */; };
+		E578330C213076F7009DA6C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330B213076F7009DA6C1 /* MainViewController.swift */; };
+		E578330D213076F7009DA6C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330B213076F7009DA6C1 /* MainViewController.swift */; };
+		E578330E213076F7009DA6C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330B213076F7009DA6C1 /* MainViewController.swift */; };
+		E5783310213077DF009DA6C1 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330F213077DF009DA6C1 /* Shakeable.swift */; };
+		E5783311213077DF009DA6C1 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330F213077DF009DA6C1 /* Shakeable.swift */; };
+		E5783312213077DF009DA6C1 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578330F213077DF009DA6C1 /* Shakeable.swift */; };
+		E578331821308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578331721308AA8009DA6C1 /* ShakeDeviceProtocol.swift */; };
+		E578331921308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578331721308AA8009DA6C1 /* ShakeDeviceProtocol.swift */; };
+		E578331A21308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578331721308AA8009DA6C1 /* ShakeDeviceProtocol.swift */; };
 		E578EF3D20E2E96800FA815D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
 		E5DD512220E36CF100497759 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578EF3C20E2E96700FA815D /* Article.swift */; };
 		E5FDDE3B20E2641800444361 /* AppApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FDDE3A20E2641800444361 /* AppApiManager.swift */; };
@@ -90,6 +99,9 @@
 		E571345B20E262860090AFCA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E571345C20E262860090AFCA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E571345F20E262EE0090AFCA /* AppUIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIConstants.swift; sourceTree = "<group>"; };
+		E578330B213076F7009DA6C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E578330F213077DF009DA6C1 /* Shakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
+		E578331721308AA8009DA6C1 /* ShakeDeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDeviceProtocol.swift; sourceTree = "<group>"; };
 		E578EF3C20E2E96700FA815D /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E5FDDE3A20E2641800444361 /* AppApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +252,7 @@
 		E54FA1DE20E23DF6002A4000 /* TechnologyAssessmentApp */ = {
 			isa = PBXGroup;
 			children = (
+				E578330A213076CE009DA6C1 /* POP Pattern */,
 				E52405E520E293B5006340B5 /* Extensions */,
 				E52405E120E29377006340B5 /* Data */,
 				E52405E020E2930F006340B5 /* Services */,
@@ -273,6 +286,16 @@
 				E54FA20120E23DF6002A4000 /* Info.plist */,
 			);
 			path = TechnologyAssessmentAppUITests;
+			sourceTree = "<group>";
+		};
+		E578330A213076CE009DA6C1 /* POP Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				E578330B213076F7009DA6C1 /* MainViewController.swift */,
+				E578330F213077DF009DA6C1 /* Shakeable.swift */,
+				E578331721308AA8009DA6C1 /* ShakeDeviceProtocol.swift */,
+			);
+			path = "POP Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E571344020E256690090AFCA /* ArticleTableViewCell.swift in Sources */,
+				E578330C213076F7009DA6C1 /* MainViewController.swift in Sources */,
+				E5783310213077DF009DA6C1 /* Shakeable.swift in Sources */,
 				E571346020E262EE0090AFCA /* AppUIConstants.swift in Sources */,
 				E571344520E259BB0090AFCA /* MasterTableViewController.swift in Sources */,
 				E571345120E25EF40090AFCA /* AppError.swift in Sources */,
@@ -515,6 +540,7 @@
 				E571344920E259CE0090AFCA /* DetailViewController.swift in Sources */,
 				E571344D20E25EAB0090AFCA /* AppNetworkClient.swift in Sources */,
 				E578EF3D20E2E96800FA815D /* Article.swift in Sources */,
+				E578331821308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */,
 				E5FDDE3B20E2641800444361 /* AppApiManager.swift in Sources */,
 				E571345D20E262870090AFCA /* Reachability.m in Sources */,
 				E571345720E261BA0090AFCA /* AppExtensions.swift in Sources */,
@@ -526,6 +552,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E571344120E256690090AFCA /* ArticleTableViewCell.swift in Sources */,
+				E578330D213076F7009DA6C1 /* MainViewController.swift in Sources */,
+				E578331921308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */,
 				E52405E420E2939A006340B5 /* AppUIConstants.swift in Sources */,
 				E571345220E25EF40090AFCA /* AppError.swift in Sources */,
 				E54FA1F520E23DF6002A4000 /* TechnologyAssessmentAppTests.swift in Sources */,
@@ -534,6 +562,7 @@
 				E571344E20E25EAB0090AFCA /* AppNetworkClient.swift in Sources */,
 				E571345E20E262870090AFCA /* Reachability.m in Sources */,
 				E52405E320E2938D006340B5 /* AppApiManager.swift in Sources */,
+				E5783311213077DF009DA6C1 /* Shakeable.swift in Sources */,
 				E571345820E261BA0090AFCA /* AppExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,7 +571,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E578330E213076F7009DA6C1 /* MainViewController.swift in Sources */,
+				E578331A21308AA8009DA6C1 /* ShakeDeviceProtocol.swift in Sources */,
 				E571344220E256690090AFCA /* ArticleTableViewCell.swift in Sources */,
+				E5783312213077DF009DA6C1 /* Shakeable.swift in Sources */,
 				E54FA20020E23DF6002A4000 /* TechnologyAssessmentAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,10 +733,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM8QS3KMCX;
 				INFOPLIST_FILE = TechnologyAssessmentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nagarro.TechnologyAssessmentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalatyrugs.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TechnologyAssessmentApp/TechnologyAssessmentApp-Bridging-Header.h";
@@ -722,10 +754,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM8QS3KMCX;
 				INFOPLIST_FILE = TechnologyAssessmentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nagarro.TechnologyAssessmentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalatyrugs.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TechnologyAssessmentApp/TechnologyAssessmentApp-Bridging-Header.h";
