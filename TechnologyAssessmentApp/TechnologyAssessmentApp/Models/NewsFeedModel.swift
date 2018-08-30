@@ -1,29 +1,27 @@
 //
-//  ArticleViewModel.swift
+//  NewsFeedModel.swift
 //  TechnologyAssessmentApp
 //
-//  Created by Kshitij Godara on 24/08/18.
+//  Created by Kshitij Godara on 30/08/18.
 //  Copyright © 2018 Nagarro. All rights reserved.
 //
 
 import Foundation
-
-struct ArticleViewModel: Codable {
+struct NewsFeedModel: Codable {
     let status, copyright: String
     let numResults: Int
-    let results: [Result]
+    let articles: [Article]
     enum CodingKeys: String, CodingKey {
         case status, copyright
         case numResults = "num_results"
-        case results
+        case articles = "results"
     }
 }
-
-struct Result: Codable {
+struct Article: Codable {
     let url, adxKeywords: String
     let column: String?
     let section, byline: String
-    let type: ResultType
+    let type: ArticleType
     let title, abstract, publishedDate: String
     let source: Source
     let resultId, assetID, views: Int
@@ -119,7 +117,7 @@ enum Source: String, Codable {
     case theNewYorkTimes = "The New York Times"
 }
 
-enum ResultType: String, Codable {
+enum ArticleType: String, Codable {
     case article = "Article"
     case interactive = "Interactive"
 }

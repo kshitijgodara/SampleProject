@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 class AppApiManager: NSObject {
-    func getArticlesList(completionHandler: @escaping (_ articleList: ArticleViewModel?, _ error: AppError?)
+    func getArticlesList(completionHandler: @escaping (_ newsFeeds: NewsFeedModel?, _ error: AppError?)
         -> Void) {
         let networkClient = AppNetworkClient.sharedInstance
         let url = WebUrl.baseUrl.replacingOccurrences(of: "{section}", with: "all-sections")
@@ -19,9 +19,9 @@ class AppApiManager: NSObject {
         networkClient.getDataFor(baseUrl: url,
                                  responseType: .json, endPoint: "", params: nil) {(jsonData, customError) in
             if customError == nil, let response = jsonData as? Data {
-                let articleModel = try? JSONDecoder().decode(ArticleViewModel.self, from: response)
-                if let article = articleModel, article.status == "OK" {
-                    completionHandler(article, nil)
+                let newsFeedModel = try? JSONDecoder().decode(NewsFeedModel.self, from: response)
+                if let feed = newsFeedModel, feed.status == "OK" {
+                    completionHandler(feed, nil)
                 } else {
                     let error = customError ?? AppError(type: AppErrorType.invalidResponseFormat,
                                                         description: "", code: 0)

@@ -26,7 +26,7 @@ class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
         articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
-        articleIconImageView.layer.cornerRadius = ((49 * UIScreen.main.bounds.width)/375.0)/2.0
+        articleIconImageView.layer.cornerRadius = (cornerRadiusRatio*UIScreen.main.bounds.width)/2.0
         articleIconImageView.layer.masksToBounds = true
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,7 +34,7 @@ class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
         // Configure the view for the selected state
     }
     // MARK: - ConfigurableCell
-    func configure(_ item: Result, at indexPath: IndexPath) {
+    func configure(_ item: Article, at indexPath: IndexPath) {
         articleAbstractLabel.text = item.abstract
         byLineLabel.text = item.byline
         dateLabel.text = item.publishedDate

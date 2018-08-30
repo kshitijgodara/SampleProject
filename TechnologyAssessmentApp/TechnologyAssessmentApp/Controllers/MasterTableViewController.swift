@@ -17,7 +17,7 @@ import MBProgressHUD
 //
 
 protocol MasterTableViewSelectionDelegate: class {
-    func articleSelected(_ articleDetail: Result?)
+    func articleSelected(_ articleDetail: Article)
 }
 
 class MasterTableViewController: UITableViewController {
@@ -25,7 +25,7 @@ class MasterTableViewController: UITableViewController {
     // MARK: Properties
     //
     var isDetailViewController: Bool = true
-    var viewModel: ArticleViewModel?
+    var newsFeedModel: NewsFeedModel?
     weak var delegate: MasterTableViewSelectionDelegate?
     fileprivate var articleDataSource: ArticleDataSource?
     //
@@ -81,7 +81,7 @@ class MasterTableViewController: UITableViewController {
                     } else {
                         if let res = response {
                             strongSelf.tableView.isHidden = false
-                            strongSelf.viewModel = res
+                            strongSelf.newsFeedModel = res
                             strongSelf.articleDataSource = strongSelf.setUpDataSource()
                         }
                     }
@@ -102,18 +102,18 @@ extension MasterTableViewController: UISplitViewControllerDelegate {
 }
 
 // MARK: - Data Source
-class ArticleDataSource: CollectionArrayDataSource<Result, ArticleTableViewCell> {}
+class ArticleDataSource: CollectionArrayDataSource<Article, ArticleTableViewCell> {}
 
 // MARK: - Private Methods
-fileprivate extension MasterTableViewController {
+extension MasterTableViewController {
     func setUpDataSource() -> ArticleDataSource? {
 
-        if let articleModel = viewModel {
-            let dataSource = ArticleDataSource(tableView: tableView, array: articleModel.results)
+        if let feedModel = newsFeedModel {
+            let dataSource = ArticleDataSource(tableView: tableView, array: feedModel.articles)
             dataSource.tableRowSelectionHandler = { [weak self] indexpath in
-                guard  let strongSelf = self else { return }
+                guard let strongSelf = self else { return }
                 let viewModel = strongSelf.articleDataSource?.row(at: indexpath)
-                strongSelf.delegate?.articleSelected(viewModel)
+                strongSelf.delegate?.articleSelected(viewModel!)
                 strongSelf.isDetailViewController = false
                 if let detailViewController = strongSelf.delegate as? DetailViewController,
                     let detailNavigationController = detailViewController.navigationController {

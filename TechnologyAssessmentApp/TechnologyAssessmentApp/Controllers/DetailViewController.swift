@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     // MARK: - IBOutlets
     //
     @IBOutlet weak var detailLabel: UILabel!
-    var article: Result? {
+    var article: Article? {
         didSet {
             refreshUI()
         }
@@ -28,9 +28,7 @@ class DetailViewController: UIViewController {
 }
 
 extension DetailViewController: MasterTableViewSelectionDelegate {
-    func articleSelected(_ articleDetail: Result?) {
-        if let detail = articleDetail {
-            article = detail
+    func articleSelected(_ articleDetail: Article) {
+            article = articleDetail
         }
-    }
 }
