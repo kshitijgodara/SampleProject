@@ -24,9 +24,9 @@ extension URLComponents {
 
 extension UISplitViewController {
     var primaryViewController: UIViewController? {
-        return self.viewControllers.first
+        return viewControllers.first
     }
     var secondaryViewController: UIViewController? {
-        return self.viewControllers.count > 1 ? self.viewControllers[1] : nil
+        return viewControllers.count > 1 ? viewControllers[1] : nil
     }
 }

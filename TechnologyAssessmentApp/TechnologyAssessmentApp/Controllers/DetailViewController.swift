@@ -21,27 +21,14 @@ class DetailViewController: UIViewController {
     }
     func refreshUI() {
         loadViewIfNeeded()
-        if let art = self.article, let abstractString = art.abstract {
-             self.detailLabel.text = abstractString
+        if let art = article {
+             detailLabel.text = art.abstract
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension DetailViewController: ArticleSelectionDelegate {
-    func articleSelected(_ articleDetail: Article?) {
-        if let detail = articleDetail {
-            self.article = detail
+extension DetailViewController: MasterTableViewSelectionDelegate {
+    func articleSelected(_ articleDetail: Article) {
+            article = articleDetail
         }
-    }
 }

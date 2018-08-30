@@ -22,11 +22,11 @@ class AppError: NSObject {
     var errorCode: Int?
     var errorDesciption: String?
     override var description: String {
-        var desc = "Error Type= \(self.errorType)"
-        if let code = self.errorCode {
+        var desc = "Error Type= \(errorType)"
+        if let code = errorCode {
             desc.append(", Error Code= \(code)")
         }
-        if let errorDesc = self.errorDesciption {
+        if let errorDesc = errorDesciption {
             desc.append(", Error Description= \(errorDesc)")
         }
         return desc

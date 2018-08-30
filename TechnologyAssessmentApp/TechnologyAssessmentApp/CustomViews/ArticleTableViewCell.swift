@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import SDWebImage
 
-class ArticleTableViewCell: UITableViewCell {
-
+class ArticleTableViewCell: UITableViewCell, ConfigurableCell {
     //
     // MARK: - IBOutlets
     //
@@ -23,17 +23,21 @@ class ArticleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
+        articleAbstractLabel.accessibilityIdentifier = "Label--articleLabel"
         //Article imageview round setUp
         articleIconImageView.clipsToBounds = true
-        articleIconImageView.layer.cornerRadius = ((54.67 * UIScreen.main.bounds.width)/375.0)/2.0
+        articleIconImageView.layer.cornerRadius = (cornerRadiusRatio*UIScreen.main.bounds.width)/2.0
         articleIconImageView.layer.masksToBounds = true
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-
+    // MARK: - ConfigurableCell
+    func configure(_ item: Article, at indexPath: IndexPath) {
+        articleAbstractLabel.text = item.abstract
+        byLineLabel.text = item.byline
+        dateLabel.text = item.publishedDate
+        articleIconImageView.sd_setImage(with: URL(string: item.media[0].mediaMetadata[0].url), placeholderImage: nil)
+    }
 }
